@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h3 id="title">Login Page</h3>
+        <form action="index.html" method="get" autocomplete="off" onsubmit= "return validate()">
+            <div>
+                <label for="username">Username</label><br>
+                <input type="text" class="" id="username" placeholder="username"><br>
+                <small id="userError">*Provide valid username</small>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com"><br>
+                <small id="emailError">*Email address id invalid</small>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="********"><br>
+                <small id="pwdError">*Password is weak</small>
+            </div>
+            <div >
+                <label for="checkpassword">Check Password</label><br>
+                <input type="password" name="checkpassword" id="checkpassword" placeholder="********"><br>
+                <small id="checkpwdError">*Check your password again</small>
+            </div>     
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
